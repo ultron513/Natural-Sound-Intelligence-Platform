@@ -1,0 +1,5 @@
+Model,Accuracy
+Random Forest,0.7212
+SVM,0.6635
+Gradient Boosting,0.6058
+KNN,0.5673

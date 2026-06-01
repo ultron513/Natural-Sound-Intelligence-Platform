@@ -1,0 +1,13 @@
+streamlit
+fastapi
+uvicorn
+python-multipart
+pydantic
+requests
+pandas
+numpy
+matplotlib
+seaborn
+librosa
+scikit-learn
+joblib
