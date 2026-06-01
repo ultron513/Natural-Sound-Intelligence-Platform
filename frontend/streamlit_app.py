@@ -133,25 +133,6 @@ st.subheader(
     "🚦 System Status"
 )
 
-'''status1, status2, status3 = st.columns(3)
-
-with status1:
-
-    st.success(
-        "Backend API Online"
-    )
-
-with status2:
-
-    st.success(
-        "Model Loaded"
-    )
-
-with status3:
-
-    st.success(
-        "Prediction Service Ready"
-    )'''
 with hero1:
     st.metric(
         "Audio Samples",
