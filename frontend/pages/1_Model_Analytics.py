@@ -9,7 +9,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 audio_df = pd.read_csv(
-   OUTPUTS_DIR / "advanced_audio_features.csv
+   OUTPUTS_DIR / "advanced_audio_features.csv"
 )
 st.set_page_config(
     page_title="Model Analytics",
