@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import librosa
 import librosa.display
 import numpy as np
+BACKEND_URL = "https://natural-sound-api.onrender.com"
 CATEGORY_MAP = {
     "water_drops": "💧 Water Drops",
     "chirping_birds": "🐦 Chirping Birds",
@@ -132,7 +133,7 @@ st.subheader(
     "🚦 System Status"
 )
 
-status1, status2, status3 = st.columns(3)
+'''status1, status2, status3 = st.columns(3)
 
 with status1:
 
@@ -150,7 +151,7 @@ with status3:
 
     st.success(
         "Prediction Service Ready"
-    )
+    )'''
 with hero1:
     st.metric(
         "Audio Samples",
@@ -182,7 +183,7 @@ with hero4:
 try:
 
     response = requests.get(
-        "http://127.0.0.1:8000/health"
+        f"{BACKEND_URL}/health"
     )
 
     if response.status_code == 200:
@@ -460,7 +461,7 @@ if uploaded_file is not None:
         try:
 
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                f"{BACKEND_URL}/predict",
                 files=files
             )
 
