@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 st.set_page_config(
     page_title="Dataset Insights",
     page_icon="📂",
@@ -13,7 +16,7 @@ st.set_page_config(
 # ---------------------------------------------------
 
 data_df = pd.read_csv(
-    "../outputs/advanced_audio_features.csv"
+   OUTPUTS_DIR / "advanced_audio_features.csv"
 )
 
 # ---------------------------------------------------

@@ -4,8 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import joblib
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 audio_df = pd.read_csv(
-    "../outputs/advanced_audio_features.csv"
+   OUTPUTS_DIR / "advanced_audio_features.csv
 )
 st.set_page_config(
     page_title="Model Analytics",
@@ -31,7 +35,7 @@ st.subheader(
 )
 
 model = joblib.load(
-    "../outputs/rf_advanced_model.pkl"
+    OUTPUTS_DIR / "rf_advanced_model.pkl"
 )
 
 feature_names = [
