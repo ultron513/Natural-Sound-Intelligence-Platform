@@ -102,7 +102,7 @@ st.subheader(
 )
 
 performance_df = pd.read_csv(
-    "../outputs/model_comparison.csv"
+    OUTPUTS_DIR / "model_comparison.csv"
 )
 
 fig2, ax2 = plt.subplots(
