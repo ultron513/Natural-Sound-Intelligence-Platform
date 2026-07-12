@@ -241,8 +241,10 @@ http://localhost:8501
 
 ## 👨‍💻 Author
 
-Ashish Kumar Patra
+Asish Kumar Patra
 
-B.Tech Student
+Roll NO: 23035010036, Email: p.asish@op.iitg.ac.in
+
+B.Sc(Hons.) Data Science and AI, IIT Guwahati, 2023-27(Cohort-1)
 
 Natural Sound Intelligence Platform
