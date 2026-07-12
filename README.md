@@ -155,7 +155,7 @@ Clone repository:
 
 ```bash
 git clone <repository-url>
-cd Natural_Sound_Statistics_Project
+cd Natural-Sound-Intelligence-Platform
 ```
 
 Install dependencies:
